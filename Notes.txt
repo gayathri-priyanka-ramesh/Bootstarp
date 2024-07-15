@@ -1,0 +1,59 @@
+Reference: https://getbootstrap.com/docs/5.0/getting-started/introduction/
+
+Ways to use Bootstrap:
+
+Download:
+Download the zip file and extract
+
+Create HTML file
+
+Add in 'head' tag
+    '<link rel="stylesheet" href="css/bootstrap.css">' 
+
+Add before the end 'body' tag
+    '<script src="js/bootstrap.bundle.js"></script>'
+    (or)
+    'popper.js' file
+    '<script src="js/bootstrap.js"></script>'
+
+
+Content Delivery Network (CDN):
+Create HTML file
+
+Copy the CDN link from 'https://getbootstrap.com/docs/5.3/getting-started/introduction/#separate'
+
+Add in 'head' tag
+    '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>'
+
+Add before the end 'body' tag
+    '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>' 
+    (or)
+    '<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>'
+
+
+NPM:
+Open Terminal in VsCode
+
+Initialize new project -> 
+    'npm init' -> it asks few questions
+    Give 'bootstrap-npm' in package name
+    (or)
+    'npm init -y' to skip questions
+    Rename the 'name' key in 'package.json' file (optional)
+
+Accept all other default values to create 'package.json' file
+
+Install dependencies under 'node_modules' -> 'npm install bootstrap'
+
+Create HTML file
+
+Add in 'head' tag
+    '<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">'
+
+Add before the end 'body' tag
+    '<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>'
+    (or)
+    Install 'popperjs' from VsCode terminal -> 'npm install @popperjs/core --save' (installed automatically in new versions)
+    'popper.js' file from '@popperjs\core/dist/___/popper.js'
+    '<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>'
